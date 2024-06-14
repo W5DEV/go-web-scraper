@@ -8,13 +8,15 @@ import (
 	"github.com/joho/godotenv"
 )
 
-func main() {
-	godotenv.Load()
-
-	port := os.Getenv("PORT")
-	if port == "" {
-		log.Fatal("PORT is not found in the environment")
+func main () {
+	fmt. Println("hello world" )
+	
+	godotenv. Load ( )
+	
+	portString := os. Getenv ("PORT" )
+	if portString == "" {
+		log.Fatal("'PORT is not found in the environment")
 	}
-
-	fmt.Println("PORT:", port)
+	
+	fmt. Println("Port:", portString)
 }
