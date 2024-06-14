@@ -13,7 +13,7 @@ func main () {
 	
 	godotenv.Load()
 	
-	portString := os. Getenv("PORT")
+	portString := os.Getenv("PORT")
 	if portString == ""{
 		log.Fatal("PORT is not found in the environment")
 	}
